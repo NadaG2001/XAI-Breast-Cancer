@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='image/breast-cancer.ico.ico') }}" type="image/png" />
+    <title>WellBeing-result </title>
+
+    <!-- aos css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+    <style>
+        body {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            color: #5a5a5a;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 16px;
+            }
+        }
+
+        .container {
+            max-width: 970px;
+            text-align: center;
+            /*left: 90px; */
+        }
+
+        .pricing-header {
+            max-width: 700px;
+        }
+
+        .card-deck .card {
+            min-width: 400px;
+        }
+
+        .themed-container {
+            padding: 15px;
+            margin-bottom: 90px;
+            background-color: rgba(0, 123, 255, .15);
+            border: 1px solid rgba(0, 123, 255, .2);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form id="form1" align="center">
+                <img src="{{ url_for('static', filename='image/help_img.png') }}" alt="" width="100" height="100">
+                <div class="pricing-header px-6 py-6 pt-md-5 pb-md-4 mx-auto text-center">
+                    <h1 class="display-6">How to know about RiskAssess ?</h1>
+                    <p class="lead">Please find below the Steps for Administrators to go about the Risk Assessment
+                        System.
+                    </p>
+                </div>
+                <div class="container themed-container">1. Input the Patient's Vitals</div>
+                <div class="container themed-container">2. Click on Submit</div>
+                <div class="container themed-container">3. Get Assessment Result</div>
+                <div class="container themed-container">4. Finally visit Disease_info Page If you want to know more
+                    about
+                    your case
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- header section starts  -->
+
+    <header class="header" data-aos="zoom-out">
+
+        <div class="image">
+            <img src="{{ url_for('static', filename='image/breast-cancer-icon.png') }}" alt="">
+            <a> WellBeing</a>
+
+        </div>
+
+        <nav class="navbar">
+            <a href="/help">help</a>
+            <a href="#footer">Contact Us</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </header>
+
+    <!-- aos js file cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- custom js file link  -->
+    <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+
+
+</body>
+
+</html>

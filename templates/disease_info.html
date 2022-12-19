@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='image/breast-cancer.ico.ico') }}" type="image/png" />
+    <title>WellBeing </title>
+
+    <!-- aos css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header" data-aos="zoom-out">
+
+        <div class="image">
+            <img src="{{ url_for('static', filename='image/breast-cancer-icon.png') }}" alt="">
+            <a> WellBeing</a>
+
+        </div>
+
+
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="#about">About Breast Cancer</a>
+            <a href="#Explain">Explaianers</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </header>
+    <br>
+    <br>
+    <br><br>
+    <!-- header section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="row">
+
+            <div class="image" data-aos="fade-right">
+
+                <img src="{{ url_for('static', filename='image/breastcancer.jpg') }}" alt="" align="right">
+            </div>
+
+            <div class="content" data-aos="fade-left">
+                <h3>
+                    <span2>About Breast Cancer</span2>
+                </h3>
+                <h3>Symptoms</h3>
+                <p>Signs and symptoms of breast cancer may include:</p>
+                <ul>
+                    <li>A breast lump or thickening that feels different from the surrounding tissue</li>
+                    <li>Change in the size, shape or appearance of a breast
+                    </li>
+                    <li>
+                        Changes to the skin over the breast, such as dimpling
+                    </li>
+                    <li>
+                        A newly inverted nipple
+                    </li>
+                    <li>Peeling, scaling, crusting or flaking of the pigmented area of skin surrounding the nipple
+                        (areola) or breast skin</li>
+                    <li>Redness or pitting of the skin over your breast, like the skin of an orange</li>
+                </ul>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+
+            <div class="content" data-aos="fade-right">
+                <h3>Causes</h3>
+                <p>Doctors know that breast cancer occurs when some breast cells begin to grow abnormally. These cells
+                    divide more rapidly than healthy cells do and continue to accumulate, forming a lump or mass. Cells
+                    may spread (metastasize) through your breast to your lymph nodes or to other parts of your body.<br>
+                    Breast cancer most often begins with cells in the milk-producing ducts (invasive ductal carcinoma).
+                    Breast cancer may also begin in the glandular tissue called lobules (invasive lobular carcinoma) or
+                    in other cells or tissue within the breast.
+                    <br>
+                    Researchers have identified hormonal, lifestyle and environmental factors that may increase your
+                    risk of breast cancer. But it's not clear why some people who have no risk factors develop cancer,
+                    yet other people with risk factors never do. It's likely that breast cancer is caused by a complex
+                    interaction of your genetic makeup and your environment.
+                </p>
+                <br>
+                <hr>
+                <br>
+            </div>
+
+        </div>
+
+    </section><br><br>
+    <!-- about section ends  -->
+
+
+    <!-- Explaination section starts  -->
+    <section class="Explain" id="Explain">
+        <h1 class="heading"> <span>Model Explaination</span></h1>
+
+        <h3 class="heading">1. Shape Values Explainer </h3>
+
+        <div class="row">
+
+            <div class="image" data-aos="fade-right">
+
+                <img src="{{ url_for('static', filename='image/shape_values.png') }}" alt="" align="right">
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="image" data-aos="fade-right">
+
+                <img src="{{ url_for('static', filename='image/shap_val.png') }}" alt="" align="right">
+            </div>
+
+        </div><br><br><br>
+        <hr>
+        <h3 class="heading">2. Lime Explainer </h3>
+        <div class="row">
+
+            <div class="image" data-aos="fade-right">
+
+                <img src="{{ url_for('static', filename='image/lime_values.png') }}" alt="" align="right">
+            </div>
+
+        </div>
+
+        <br><br><br>
+        <hr>
+        <h3 class="heading">3. Eli5 Explainer </h3>
+        <div class="row">
+
+            <div class="image" data-aos="fade-right">
+
+                <img src="{{ url_for('static', filename='image/eli5_values.png') }}" width="200px" alt="" align="right">
+            </div>
+
+        </div><br><br>
+
+    </section>
+
+    <!-- Explaination section ends  -->
+
+
+    <!-- aos js file cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+    <!-- custom js file link  -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 1000,
+            delay: 400
+        });
+
+    </script>
+
+</body>
+
+</html>
